@@ -30,7 +30,7 @@ use App\Http\Controllers\EcologicalSurveyController;
 use App\Http\Controllers\CSVController;
 use App\Http\Controllers\AdminUsersController;
 use App\Http\Controllers\VendorsController;
-use App\Http\Controllers\PatientsController;
+use App\Http\Controllers\FoodItemsOrderController;
 use App\Http\Controllers\Sessions1Controller;
 use App\Http\Controllers\Sessions2Controller;
 use App\Http\Controllers\Sessions3Controller;
@@ -103,6 +103,7 @@ Route::group(['middleware' => ['auth', 'Setting', 'xss', '2fa']], function () {
     Route::resource('fooditems', FoodItemController::class);
     Route::resource('fooditemscategory', FoodItemCategoryController::class);
     Route::resource('allExersices', AllExersicesController::class);
+    Route::resource('allOrders', FoodItemsOrderController::class);
     
     Route::resource('admins', AdminUsersController::class);
 

@@ -1,16 +1,16 @@
 @extends('layouts.main')
-@section('title', __('All Exersices'))
+@section('title', __('Foods'))
 @section('content')
 <div class="page-header">
     <div class="page-block">
         <div class="row align-items-center">
             <div class="col-md-12">
                 <div class="page-header-title">
-                    <h4 class="m-b-10">{{ __('All Exersices'') }}</h4>
+                    <h4 class="m-b-10">{{ __('Foods') }}</h4>
                 </div>
                 <ul class="breadcrumb">
                     <li class="breadcrumb-item"><a href="{{ route('home') }}">{{ __('Dashboard') }}</a></li>
-                    <li class="breadcrumb-item">{{ __('All Exersices'') }}
+                    <li class="breadcrumb-item">{{ __('Foods') }}
                     </li>
                 </ul>
             </div>

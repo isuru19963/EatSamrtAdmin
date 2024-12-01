@@ -25,7 +25,10 @@ $languages = Utility::languages();
                 <a href="{{ route('vendors.index') }}" class="dash-link"><span class="dash-micon"><i
                             class="ti ti-user"></i></span><span class="dash-mtext">{{ __('Vendors') }}</span> </a>
             </li>
-            
+            <li class="dash-item dash-hasmenu {{ request()->is('orders*') ? 'active' : '' }}">
+                <a href="{{ route('allOrders.index') }}" class="dash-link"><span class="dash-micon"><i
+                            class="ti ti-user"></i></span><span class="dash-mtext">{{ __('Orders') }}</span> </a>
+            </li>
 
             <li class="dash-item dash-hasmenu {{ request()->is('foods*') ? 'active' : '' }}">
                 <a href="{{ route('fooditems.index') }}" class="dash-link"><span class="dash-micon"><i
@@ -35,6 +38,10 @@ $languages = Utility::languages();
               <li class="dash-item dash-hasmenu {{ request()->is('category*') ? 'active' : '' }}">
                 <a href="{{ route('fooditemscategory.index') }}" class="dash-link"><span class="dash-micon"><i
                             class="ti ti-user"></i></span><span class="dash-mtext">{{ __('Foods Category') }}</span> </a>
+            </li>
+            <li class="dash-item dash-hasmenu {{ request()->is('exersice*') ? 'active' : '' }}">
+                <a href="{{ route('allExersices.index') }}" class="dash-link"><span class="dash-micon"><i
+                            class="ti ti-user"></i></span><span class="dash-mtext">{{ __('All Exersice') }}</span> </a>
             </li>
 
     
